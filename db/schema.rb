@@ -13,10 +13,8 @@
 ActiveRecord::Schema.define(version: 20200918170459) do
 
   create_table "passengers", force: :cascade do |t|
-    t.integer  "passenger_id", null: false
-    t.integer  "taxi_id",      null: false
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "passengers_taxis", id: false, force: :cascade do |t|
@@ -34,10 +32,8 @@ ActiveRecord::Schema.define(version: 20200918170459) do
   end
 
   create_table "taxis", force: :cascade do |t|
-    t.integer  "passenger_id", null: false
-    t.integer  "taxi_id",      null: false
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
