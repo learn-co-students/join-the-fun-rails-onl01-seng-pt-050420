@@ -3,4 +3,8 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+def console 
+    Pry.start
+end
+
 JoinTheFunRails::Application.load_tasks

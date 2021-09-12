@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>JoinTheFunRails</title>
+   <%= csrf_meta_tags %> 
+</head>
+<body>
+
+<h1>HEY!!</h1>
+<%= yield %>
+<%@rides.each do |ride|%>
+<p>Ride <%=ride.id%> Passenger no. <%=ride.passenger_id%> Taxi no. <%=ride.taxi_id%></p><%end%>
+</body>
+</html>
